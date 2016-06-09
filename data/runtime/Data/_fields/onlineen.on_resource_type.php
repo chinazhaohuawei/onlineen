@@ -1,1 +1,1 @@
-a:5:{i:0;s:7:"type_id";i:1;s:9:"type_name";i:2;s:9:"type_type";s:3:"_pk";s:7:"type_id";s:5:"_type";a:3:{s:7:"type_id";s:6:"int(2)";s:9:"type_name";s:12:"varchar(100)";s:9:"type_type";s:6:"int(2)";}}
+a:4:{i:0;s:7:"type_id";i:1;s:9:"type_name";s:3:"_pk";s:7:"type_id";s:5:"_type";a:2:{s:7:"type_id";s:6:"int(2)";s:9:"type_name";s:12:"varchar(100)";}}

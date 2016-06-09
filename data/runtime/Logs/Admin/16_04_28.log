@@ -1,0 +1,298 @@
+[ 2016-04-28T22:18:56+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005434s ]
+SQL: SHOW COLUMNS FROM `on_users` [ RunTime:0.0861s ]
+SQL: SELECT * FROM `on_users` WHERE `user_login` = 'zhaohuawei' LIMIT 1   [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `on_role_user` [ RunTime:0.0048s ]
+SQL: SELECT `role_id` FROM on_role_user a INNER JOIN on_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0042s ]
+SQL: UPDATE `on_users` SET `user_login`='zhaohuawei',`user_pass`='681ab49e8b67d08bff1b954d77ce6816d958314845a1a65c',`user_nicename`='admin',`user_email`='937768649@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='0.0.0.0',`last_login_time`='2016-04-28 22:18:56',`create_time`='2016-02-24 03:44:51',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '1' [ RunTime:0.0370s ]
+
+[ 2016-04-28T22:26:22+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Adddata&a=resourcelist&menuid=164
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-04-28T22:26:56+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T22:26:59+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=menu&a=add
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T22:32:34+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001090s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007626s ]
+SQL: SHOW COLUMNS FROM `on_users` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `on_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `on_menu` [ RunTime:0.0020s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `on_auth_rule` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `on_menu` WHERE `app` = 'Admin' AND `model` = 'VideoManage' AND `action` = 'index' LIMIT 1   [ RunTime:0.0437s ]
+SQL: SELECT `parentid` FROM `on_menu` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `on_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('0','视频管理','Admin','VideoManage','index','','fa-play-circle','','1','0') [ RunTime:0.0258s ]
+SQL: SELECT * FROM `on_auth_rule` WHERE `name` = 'admin/videomanage/index' LIMIT 1   [ RunTime:0.0114s ]
+SQL: INSERT INTO `on_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('admin/videomanage/index','Admin','admin_url','视频管理') [ RunTime:0.0007s ]
+
+[ 2016-04-28T22:32:35+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T22:43:18+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T22:43:20+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=edit&id=165&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T22:43:52+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002557s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006965s ]
+SQL: SHOW COLUMNS FROM `on_users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `on_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `on_menu` [ RunTime:0.0021s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `on_auth_rule` [ RunTime:0.0014s ]
+SQL: SELECT `id` FROM `on_menu` WHERE `app` = 'Admin' AND `model` = 'VideoManage' AND `action` = 'index' LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `on_menu` SET `parentid`='0',`name`='视频管理',`app`='Admin',`model`='VideoManage',`action`='index',`data`='',`icon`='play-circle',`remark`='',`status`='1',`type`='0' WHERE `id` = 165 [ RunTime:0.0015s ]
+SQL: SELECT * FROM `on_auth_rule` WHERE `name` = 'admin/videomanage/index' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `on_auth_rule` SET `name`='admin/videomanage/index',`module`='Admin',`type`='admin_url',`title`='视频管理' WHERE `name` = 'admin/videomanage/index' [ RunTime:0.0010s ]
+
+[ 2016-04-28T22:43:52+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=edit&id=165&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T22:44:00+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T22:44:03+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=add&parentid=165
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T22:44:38+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007195s ]
+SQL: SHOW COLUMNS FROM `on_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `on_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `on_menu` [ RunTime:0.0012s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `on_auth_rule` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `on_menu` WHERE `app` = 'Admin' AND `model` = 'VideoManage' AND `action` = 'videomanage' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `parentid` FROM `on_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `on_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('165','视频管理','Admin','VideoManage','videomanage','','','','1','0') [ RunTime:0.0006s ]
+SQL: SELECT * FROM `on_auth_rule` WHERE `name` = 'admin/videomanage/videomanage' LIMIT 1   [ RunTime:0.0008s ]
+SQL: INSERT INTO `on_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('admin/videomanage/videomanage','Admin','admin_url','视频管理') [ RunTime:0.0006s ]
+
+[ 2016-04-28T22:44:38+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T22:44:45+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=add&parentid=165
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T22:45:35+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001770s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007497s ]
+SQL: SHOW COLUMNS FROM `on_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `on_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `on_menu` [ RunTime:0.0012s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `on_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `on_menu` WHERE `app` = 'Admin' AND `model` = 'VideoManage' AND `action` = 'addvideo' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `parentid` FROM `on_menu` WHERE `id` = 165 LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `on_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('165','新增视频','Admin','VideoManage','addvideo','','','','1','0') [ RunTime:0.0007s ]
+SQL: SELECT * FROM `on_auth_rule` WHERE `name` = 'admin/videomanage/addvideo' LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `on_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('admin/videomanage/addvideo','Admin','admin_url','新增视频') [ RunTime:0.0005s ]
+
+[ 2016-04-28T22:45:35+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T22:45:40+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=videomanage&menuid=166
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-04-28T22:45:43+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=addvideo&menuid=167
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-04-28T23:23:10+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=videomanage&menuid=166
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:23:52+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=videomanage&menuid=166
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:24:09+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Adddata&a=resourcelist&menuid=164
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-04-28T23:29:17+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=videomanage&menuid=166
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+ERR: 模板不存在:tpl_admin/simpleboot/Admin/VideoManage/coursemanage.html
+
+[ 2016-04-28T23:29:27+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=videomanage&menuid=166
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:29:38+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=videomanage&menuid=166
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:29:56+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=change&id=2
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:40:15+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=change&id=2
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:43:37+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=change&id=2
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:43:40+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=videomanage&menuid=166
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:43:41+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=change_course&id=2
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:44:59+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=change_course&id=2
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:46:20+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=videomanage
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:46:21+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=videomanage
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:46:23+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=change_course&id=2
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:46:24+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=change_course&id=2
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:47:47+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=change_course&id=2
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:47:48+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=change_course&id=2
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:47:58+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=cover_upload
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:48:00+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=change_course&id=2
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:49:32+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=change_course&id=2
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:49:33+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=change_course&id=2
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:50:14+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=videomanage
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:50:25+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=change_course&id=2
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:50:27+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=VideoManage&a=videomanage
+NOTIC: D方法实例化没找到模型类Common\Model\CourseModel
+NOTIC: D方法实例化没找到模型类Common\Model\CourseTypeModel
+
+[ 2016-04-28T23:52:42+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T23:52:44+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=edit&id=165&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T23:52:48+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001646s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007442s ]
+SQL: SHOW COLUMNS FROM `on_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `on_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `on_menu` [ RunTime:0.0013s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `on_auth_rule` [ RunTime:0.0011s ]
+SQL: SELECT `id` FROM `on_menu` WHERE `app` = 'Admin' AND `model` = 'VideoManage' AND `action` = 'index' LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `on_menu` SET `parentid`='0',`name`='课程管理',`app`='Admin',`model`='VideoManage',`action`='index',`data`='',`icon`='play-circle',`remark`='',`status`='1',`type`='0' WHERE `id` = 165 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `on_auth_rule` WHERE `name` = 'admin/videomanage/index' LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `on_auth_rule` SET `name`='admin/videomanage/index',`module`='Admin',`type`='admin_url',`title`='课程管理' WHERE `name` = 'admin/videomanage/index' [ RunTime:0.0020s ]
+
+[ 2016-04-28T23:52:48+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=edit&id=165&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T23:52:50+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T23:53:00+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T23:53:07+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=edit&id=166&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T23:53:13+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001788s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007206s ]
+SQL: SHOW COLUMNS FROM `on_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `on_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `on_menu` [ RunTime:0.0012s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `on_auth_rule` [ RunTime:0.0011s ]
+SQL: SELECT `id` FROM `on_menu` WHERE `app` = 'Admin' AND `model` = 'VideoManage' AND `action` = 'videomanage' LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `on_menu` SET `parentid`='165',`name`='课程管理',`app`='Admin',`model`='VideoManage',`action`='videomanage',`data`='',`icon`='',`remark`='',`status`='1',`type`='0' WHERE `id` = 166 [ RunTime:0.0009s ]
+SQL: SELECT * FROM `on_auth_rule` WHERE `name` = 'admin/videomanage/videomanage' LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `on_auth_rule` SET `name`='admin/videomanage/videomanage',`module`='Admin',`type`='admin_url',`title`='课程管理' WHERE `name` = 'admin/videomanage/videomanage' [ RunTime:0.0014s ]
+
+[ 2016-04-28T23:53:13+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=edit&id=166&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T23:53:16+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T23:53:22+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=edit&id=167
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T23:53:27+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001711s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007345s ]
+SQL: SHOW COLUMNS FROM `on_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `on_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `on_menu` [ RunTime:0.0012s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `on_auth_rule` [ RunTime:0.0012s ]
+SQL: SELECT `id` FROM `on_menu` WHERE `app` = 'Admin' AND `model` = 'VideoManage' AND `action` = 'addvideo' LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `on_menu` SET `parentid`='165',`name`='新增课程',`app`='Admin',`model`='VideoManage',`action`='addvideo',`data`='',`icon`='',`remark`='',`status`='1',`type`='0' WHERE `id` = 167 [ RunTime:0.0009s ]
+SQL: SELECT * FROM `on_auth_rule` WHERE `name` = 'admin/videomanage/addvideo' LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `on_auth_rule` SET `name`='admin/videomanage/addvideo',`module`='Admin',`type`='admin_url',`title`='新增课程' WHERE `name` = 'admin/videomanage/addvideo' [ RunTime:0.0014s ]
+
+[ 2016-04-28T23:53:27+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Menu&a=edit&id=167
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2016-04-28T23:53:32+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+

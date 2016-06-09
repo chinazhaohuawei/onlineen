@@ -3,7 +3,7 @@
 /**
  * Simple script to set correct charset for changelog
  *
- * @package phpMyAdmin
+ * @package PhpMyAdmin
  */
 
 /**
@@ -64,7 +64,7 @@ $replaces = array(
 
     // linking files
     '/(\s+)([\\/a-z_0-9\.]+\.(?:php3?|html|pl|js|sh))/i'
-    => '\\1<a href="http://phpmyadmin.git.sourceforge.net/git/gitweb.cgi?p=phpmyadmin/phpmyadmin;a=history;f=\\2;hb=HEAD">\\2</a>',
+    => '\\1<a href="https://github.com/phpmyadmin/phpmyadmin/commits/HEAD/\\2">\\2</a>',
 
     // FAQ entries
     '/FAQ ([0-9]+)\.([0-9a-z]+)/i'
@@ -75,18 +75,22 @@ $replaces = array(
     => '<a href="https://sourceforge.net/support/tracker.php?aid=\\1">bug #\\1</a>',
 
     // all other 6+ digit numbers are treated as bugs
-    '/(?<!BUG|RFE|patch) #?([0-9]{6,})/i'
+    '/(?<!bug|RFE|patch) #?([0-9]{6,})/i'
     => ' <a href="https://sourceforge.net/support/tracker.php?aid=\\1">bug #\\1</a>',
 
     // CVE/CAN entries
     '/((CAN|CVE)-[0-9]+-[0-9]+)/'
     => '<a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=\\1">\\1</a>',
 
+    // PMASAentries
+    '/(PMASA-[0-9]+-[0-9]+)/'
+    => '<a href="http://www.phpmyadmin.net/home_page/security/\\1.php">\\1</a>',
+
     // Highlight releases (with links)
     '/([0-9]+)\.([0-9]+)\.([0-9]+)\.0 (\([0-9-]+\))/'
-    => '<a name="\\1_\\2_\\3"></a><a href="http://phpmyadmin.git.sourceforge.net/git/gitweb.cgi?p=phpmyadmin/phpmyadmin;a=shortlog;h=refs/tags/RELEASE_\\1_\\2_\\3">\\1.\\2.\\3.0 \\4</a>',
+    => '<a name="\\1_\\2_\\3"></a><a href="https://github.com/phpmyadmin/phpmyadmin/commits/RELEASE_\\1_\\2_\\3">\\1.\\2.\\3.0 \\4</a>',
     '/([0-9]+)\.([0-9]+)\.([0-9]+)\.([1-9][0-9]*) (\([0-9-]+\))/'
-    => '<a name="\\1_\\2_\\3_\\4"></a><a href="http://phpmyadmin.git.sourceforge.net/git/gitweb.cgi?p=phpmyadmin/phpmyadmin;a=shortlog;h=refs/tags/RELEASE_\\1_\\2_\\3_\\4">\\1.\\2.\\3.\\4 \\5</a>',
+    => '<a name="\\1_\\2_\\3_\\4"></a><a href="https://github.com/phpmyadmin/phpmyadmin/commits/RELEASE_\\1_\\2_\\3_\\4">\\1.\\2.\\3.\\4 \\5</a>',
 
     // Highlight releases (not linkable)
     '/(    ### )(.*)/'
@@ -97,8 +101,7 @@ $replaces = array(
 header('Content-type: text/html; charset=utf-8');
 echo '<?xml version="1.0" encoding="utf-8"?'.'>';
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
 <head>
 <link rel="icon" href="./favicon.ico" type="image/x-icon" />

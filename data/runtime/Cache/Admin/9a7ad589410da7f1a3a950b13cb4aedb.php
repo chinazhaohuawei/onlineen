@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
 		<meta name="renderer" content="webkit|ie-comp|ie-stand">
 		<meta name="robots" content="noindex,nofollow">
-		<link href="/tpl_admin/simpleboot/assets/css/admin_login.css" rel="stylesheet" />
+		<link href="/onlineen0328/tpl_admin/simpleboot/assets/css/admin_login.css" rel="stylesheet" />
 		<style>
 			#login_btn_wraper{
 				text-align: center;
@@ -32,8 +32,8 @@
 	</head>
 <body>
 	<div class="wrap">
-		<!--<h1><a href="">ThinkCMF 后台管理中心</a></h1>-->
-		<h1 style="margin: 10px 0"><a style="background: url('/tpl_admin/simpleboot/assets/images/img_spript.png') no-repeat center;height: 63px;"></a></h1>
+		<!--<h1><a href="/onlineen0328">ThinkCMF 后台管理中心</a></h1>-->
+		<h1 style="margin: 10px 0"><a style="background: url('/onlineen0328/tpl_admin/simpleboot/assets/images/img_spript.png') no-repeat center;height: 63px;"></a></h1>
 		<form method="post" name="login" action="<?php echo U('public/dologin');?>" autoComplete="off" class="J_ajaxForm">
 			<div class="login">
 				<ul>
@@ -61,14 +61,14 @@
 
 <script>
 var GV = {
-	DIMAUB: "/",
+	DIMAUB: "/onlineen0328/",
 	JS_ROOT: "statics/js/",//js版本号
 	TOKEN : ''	//token ajax全局
 };
 </script>
-<script src="/statics/js/wind.js"></script>
-<script src="/statics/js/jquery.js"></script>
-<script type="text/javascript" src="/statics/js/common.js"></script>
+<script src="/onlineen0328/statics/js/wind.js"></script>
+<script src="/onlineen0328/statics/js/jquery.js"></script>
+<script type="text/javascript" src="/onlineen0328/statics/js/common.js"></script>
 <script>
 ;(function(){
 	document.getElementById('J_admin_name').focus();

@@ -1,0 +1,12 @@
+[ 2016-04-30T18:26:24+08:00 ] ::1 /onlineen0328/index.php?g=Down&m=index&a=videodown&id=2
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-04-30T23:27:24+08:00 ] ::1 /onlineen0328/index.php?g=Down&m=index&a=videodown&id=3
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-04-30T23:27:45+08:00 ] ::1 /onlineen0328/index.php?g=Down&m=Index&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+

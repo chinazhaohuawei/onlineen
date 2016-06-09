@@ -1,0 +1,102 @@
+[ 2016-05-02T11:11:33+08:00 ] ::1 /onlineen0328/index.php/Down/Index/index.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:11:42+08:00 ] ::1 /onlineen0328/index.php/Down/Index/index.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:11:54+08:00 ] ::1 /onlineen0328/index.php/Down/Index/index.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:12:09+08:00 ] ::1 /onlineen0328/index.php/Down/Index/index.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:12:13+08:00 ] ::1 /onlineen0328/index.php/Down/Index/index.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:13:16+08:00 ] ::1 /onlineen0328/Down/Index/index.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:15:31+08:00 ] ::1 /onlineen0328/index.php/Down/Index/index.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:16:04+08:00 ] ::1 /onlineen0328/Down/Index/index.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:16:10+08:00 ] ::1 /onlineen0328/Down/Index/
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:24:51+08:00 ] ::1 /onlineen0328/index.php/Portal/Course/index/courseid/index.php
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'index.php' in 'where clause'
+
+[ 2016-05-02T11:31:44+08:00 ] ::1 /onlineen0328/index.php/Down/Index/index.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:32:18+08:00 ] ::1 /onlineen0328/index.php&g=Down&m=Index&a=index
+ERR: 无法加载控制器:Index.php&g=Down&m=Index&a=index
+
+[ 2016-05-02T11:32:23+08:00 ] ::1 /onlineen0328/index.php/Down/Index/index.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:32:26+08:00 ] ::1 /onlineen0328/index.php/Down/Index/index/
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:32:29+08:00 ] ::1 /onlineen0328/index.php/Down/Index/index/
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:32:57+08:00 ] ::1 /onlineen0328/index.php/Down/Index/index/
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:34:04+08:00 ] ::1 /onlineen0328/index.php/Down/index/videodown/id/2.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:34:57+08:00 ] ::1 /onlineen0328/index.php/Down/index/videodown/id/2.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:34:58+08:00 ] ::1 /onlineen0328/index.php/Down/index/videodown/id/2.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:35:41+08:00 ] ::1 /onlineen0328/index.php/Down/index/videodown/id/2.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:35:41+08:00 ] ::1 /onlineen0328/index.php/Down/index/videodown/id/2.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:35:42+08:00 ] ::1 /onlineen0328/index.php/Down/index/videodown/id/2.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:35:50+08:00 ] ::1 /onlineen0328/index.php/Down/index/videodown/id/2.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:35:51+08:00 ] ::1 /onlineen0328/index.php/Down/index/videodown/id/2.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:35:55+08:00 ] ::1 /onlineen0328/index.php/Down/index/videodown/id/2.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:35:56+08:00 ] ::1 /onlineen0328/index.php/Down/index/videodown/id/2.html
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:47:31+08:00 ] ::1 /onlineen0328/index.php/Down/index/
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:57:35+08:00 ] ::1 /onlineen0328/index.php&g=Down&m=Index&a=index
+ERR: 无法加载控制器:Index.php&g=Down&m=Index&a=index
+
+[ 2016-05-02T11:57:43+08:00 ] ::1 /onlineen0328/index.php/Down/Index/index/
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T11:57:46+08:00 ] ::1 /onlineen0328/Down/Index/index/
+ERR: 无法加载控制器:Down
+
+[ 2016-05-02T12:41:50+08:00 ] ::1 /onlineen0328/index.php/Portal/Index/index.html
+ERR: 无法加载控制器:Portal/Index/index
+
+[ 2016-05-02T12:42:01+08:00 ] ::1 /onlineen0328/index.php/Portal/Index/index.html
+ERR: 无法加载控制器:Portal/Index/index
+
+[ 2016-05-02T15:04:43+08:00 ] ::1 /onlineen0328/Question/Index/index.html
+ERR: 无法加载控制器:Question
+
+[ 2016-05-02T19:19:23+08:00 ] ::1 /onlineen0328/Portal/Course/video/courseid/2/videoid/index.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index ) LIMIT 1' at line 1
+

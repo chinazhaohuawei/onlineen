@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-<link rel="icon" href="/tpl/onlineenweb/Public/images/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="/tpl/onlineenweb/Public/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/git-onlineen/https-::github.com:chinazhaohuawei:onlineen.git/tpl/onlineenweb/Public/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/git-onlineen/https-::github.com:chinazhaohuawei:onlineen.git/tpl/onlineenweb/Public/images/favicon.ico" type="image/x-icon">
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,15 +13,15 @@
 <meta name="Description" content="英语在线 专注提供免费优质的英语口语 英语听力 英语语法 英语词汇 英语写作 英语阅读 英语翻译 等资料素材" />
 
 <!-- Bootstrap -->
-<link href="/tpl/onlineenweb/Public/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="/tpl/onlineenweb/Public/css/style.css" type="text/css">
-<link href="/tpl/onlineenweb/Public/css/bootstrap.min.css" rel="stylesheet">
+<link href="/git-onlineen/https-::github.com:chinazhaohuawei:onlineen.git/tpl/onlineenweb/Public/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/git-onlineen/https-::github.com:chinazhaohuawei:onlineen.git/tpl/onlineenweb/Public/css/style.css" type="text/css">
+<link href="/git-onlineen/https-::github.com:chinazhaohuawei:onlineen.git/tpl/onlineenweb/Public/css/bootstrap.min.css" rel="stylesheet">
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-<script src="/tpl/onlineenweb/Public/js/bootstrap.min.js"></script>
-<link href="/statics/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-<!--<link href="/statics/simpleboot/css/simplebootadmin.css" rel="stylesheet">-->
-<!--<link href="/statics/js/artDialog/skins/default.css" rel="stylesheet" />-->
-<!--<link href="/statics/simpleboot/font-awesome/4.2.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">-->
+<script src="/git-onlineen/https-::github.com:chinazhaohuawei:onlineen.git/tpl/onlineenweb/Public/js/bootstrap.min.js"></script>
+<link href="/git-onlineen/https-::github.com:chinazhaohuawei:onlineen.git/statics/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+<!--<link href="/git-onlineen/https-::github.com:chinazhaohuawei:onlineen.git/statics/simpleboot/css/simplebootadmin.css" rel="stylesheet">-->
+<!--<link href="/git-onlineen/https-::github.com:chinazhaohuawei:onlineen.git/statics/js/artDialog/skins/default.css" rel="stylesheet" />-->
+<!--<link href="/git-onlineen/https-::github.com:chinazhaohuawei:onlineen.git/statics/simpleboot/font-awesome/4.2.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">-->
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -69,7 +69,7 @@
     }
 </style>
 <div class="horizontal-advert-place">
-    <img src="/tpl/onlineenweb/Public/images/question_banner.png">
+    <img src="/git-onlineen/https-::github.com:chinazhaohuawei:onlineen.git/tpl/onlineenweb/Public/images/question_banner.png">
 </div>
     <div class="separate"></div>
     <div class="container-fluid">
@@ -78,7 +78,7 @@
                 <div class="row-fluid">
                     <div class="span6">
                         <div class="hero-unit">
-                            <img style="margin: 0 90px" class="img-thumbnail" src="/tpl/onlineenweb/Public/images/alone_train.png">
+                            <img style="margin: 0 90px" class="img-thumbnail" src="/git-onlineen/https-::github.com:chinazhaohuawei:onlineen.git/tpl/onlineenweb/Public/images/alone_train.png">
                             <h2 align="center">
                                 知识点单项训练
                             </h2>
@@ -89,7 +89,7 @@
                     </div>
                     <div class="span6">
                         <div class="hero-unit">
-                            <img style="margin: 0 90px" class="img-thumbnail" src="/tpl/onlineenweb/Public/images/practice_test.png">
+                            <img style="margin: 0 90px" class="img-thumbnail" src="/git-onlineen/https-::github.com:chinazhaohuawei:onlineen.git/tpl/onlineenweb/Public/images/practice_test.png">
                             <h2 align="center">
                                 综合模拟考试
                             </h2>
@@ -136,7 +136,7 @@
 </footer>
 
 
-<script src="/tpl/onlineenweb/Public/js/slide.js"></script>
+<script src="/git-onlineen/https-::github.com:chinazhaohuawei:onlineen.git/tpl/onlineenweb/Public/js/slide.js"></script>
 
 </body>
 

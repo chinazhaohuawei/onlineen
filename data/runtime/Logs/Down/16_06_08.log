@@ -1,10 +1,4 @@
-[ 2016-06-08T23:20:55+08:00 ] 113.124.117.150 /index.php?g=Down
-ERR: 无法加载控制器:Index
-
-[ 2016-06-08T23:22:25+08:00 ] 113.124.117.150 /index.php?g=Down
-ERR: 无法加载控制器:Index
-
-[ 2016-06-08T23:26:08+08:00 ] 113.124.117.150 /index.php?g=Down&m=Index&a=index
+[ 2016-06-08T18:13:41+08:00 ] ::1 /onlineen0328/Down/Index/index.html
 NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
 NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
 

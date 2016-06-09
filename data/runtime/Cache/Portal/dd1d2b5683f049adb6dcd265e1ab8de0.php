@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-<link rel="icon" href="/tpl/onlineenweb/Public/images/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="/tpl/onlineenweb/Public/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/onlineen0328/tpl/onlineenweb/Public/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/onlineen0328/tpl/onlineenweb/Public/images/favicon.ico" type="image/x-icon">
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,15 +13,15 @@
 <meta name="Description" content="英语在线 专注提供免费优质的英语口语 英语听力 英语语法 英语词汇 英语写作 英语阅读 英语翻译 等资料素材" />
 
 <!-- Bootstrap -->
-<link href="/tpl/onlineenweb/Public/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="/tpl/onlineenweb/Public/css/style.css" type="text/css">
-<link href="/tpl/onlineenweb/Public/css/bootstrap.min.css" rel="stylesheet">
+<link href="/onlineen0328/tpl/onlineenweb/Public/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/onlineen0328/tpl/onlineenweb/Public/css/style.css" type="text/css">
+<link href="/onlineen0328/tpl/onlineenweb/Public/css/bootstrap.min.css" rel="stylesheet">
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-<script src="/tpl/onlineenweb/Public/js/bootstrap.min.js"></script>
-<link href="/statics/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-<!--<link href="/statics/simpleboot/css/simplebootadmin.css" rel="stylesheet">-->
-<!--<link href="/statics/js/artDialog/skins/default.css" rel="stylesheet" />-->
-<!--<link href="/statics/simpleboot/font-awesome/4.2.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">-->
+<script src="/onlineen0328/tpl/onlineenweb/Public/js/bootstrap.min.js"></script>
+<link href="/onlineen0328/statics/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+<!--<link href="/onlineen0328/statics/simpleboot/css/simplebootadmin.css" rel="stylesheet">-->
+<!--<link href="/onlineen0328/statics/js/artDialog/skins/default.css" rel="stylesheet" />-->
+<!--<link href="/onlineen0328/statics/simpleboot/font-awesome/4.2.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">-->
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -78,7 +78,7 @@
         </div>
         <div class="coure_video">
             <!--<video controls="controls" preload="auto" autobuffer>-->
-                <!--<source src="/data/video/<?php echo ($video_data[0][video_url]); ?>.mp4" type="video/mp4">-->
+                <!--<source src="/onlineen0328/data/video/<?php echo ($video_data[0][video_url]); ?>.mp4" type="video/mp4">-->
                 <!--您的浏览器不支持该视频插件-->
             <!--</video>-->
             <embed src="<?php echo ($video_data[0][video_url]); ?>" allowScriptAccess="sameDomain" allownetworking="internal"  allowFullScreen="true" quality="high"allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
@@ -92,7 +92,7 @@
         <div class="video_guide">
             <?php if($last_video_data): ?><div class="video_last_next">
                 <a href="<?php echo U('Portal/Course/video',array('courseid'=>$last_video_data['course_id'],'videoid'=>$last_video_data['video_id']));?>" target="_blank">
-                    <img style='background: url("/data/video/<?php echo ($last_video_data["video_pic"]); ?>"); background-size: 124px 85px;' src="/tpl/onlineenweb//Public/images/playwidth.png" title="<?php echo ($last_video_data["video_info"]); ?>">
+                    <img style='background: url("/onlineen0328/data/video/<?php echo ($last_video_data["video_pic"]); ?>"); background-size: 124px 85px;' src="/onlineen0328/tpl/onlineenweb//Public/images/playwidth.png" title="<?php echo ($last_video_data["video_info"]); ?>">
                 </a>
                 <div class="right">
                     <h3>
@@ -105,7 +105,7 @@
             </div><?php endif; ?>
             <?php if($next_video_data): ?><div class="video_last_next">
                     <a href="<?php echo U('Portal/Course/video',array('courseid'=>$next_video_data['course_id'],'videoid'=>$next_video_data['video_id']));?>" target="_blank">
-                        <img style='background: url("/data/video/<?php echo ($next_video_data["video_pic"]); ?>"); background-size: 124px 85px;' src="/tpl/onlineenweb//Public/images/playwidth.png" title="<?php echo ($next_video_data["video_info"]); ?>">
+                        <img style='background: url("/onlineen0328/data/video/<?php echo ($next_video_data["video_pic"]); ?>"); background-size: 124px 85px;' src="/onlineen0328/tpl/onlineenweb//Public/images/playwidth.png" title="<?php echo ($next_video_data["video_info"]); ?>">
                     </a>
                     <div class="right">
                         <h3>

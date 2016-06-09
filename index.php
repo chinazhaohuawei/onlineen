@@ -1,5 +1,4 @@
 <?php
-
 /**
  * 项目入口文件
  * Some rights reserved：www.simplewind.net
@@ -19,7 +18,7 @@ if (ini_get('magic_quotes_gpc')) {
 	$_POST = stripslashesRecursive($_POST);
 }
 //开启调试模式
-define("APP_DEBUG", false);
+define("APP_DEBUG", true);
 //网站当前路径
 define('SITE_PATH', dirname(__FILE__)."/");
 //项目路径，不可更改
@@ -37,7 +36,7 @@ define("HTML_PATH", SITE_PATH . "/data/runtime/Html/");
 //版本号
 define("SIMPLEWIND_CMF_VERSION", 'X1.6.1');
 //去掉链接中的“index.php”
-define('__APP__', '');
+define('__APP__', '/onlineen0328');
 
 define("THINKCMF_CORE_TAGLIBS", 'cx,Common\Lib\Taglib\TagLibSpadmin,Common\Lib\Taglib\TagLibHome');
 

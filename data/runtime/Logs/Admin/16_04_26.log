@@ -1,0 +1,37 @@
+[ 2016-04-26T22:07:16+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004390s ]
+
+[ 2016-04-26T22:07:20+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001362s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006360s ]
+SQL: SHOW COLUMNS FROM `on_users` [ RunTime:0.0572s ]
+SQL: SELECT * FROM `on_users` WHERE `user_login` = 'zhaohuawei' LIMIT 1   [ RunTime:0.0378s ]
+SQL: SHOW COLUMNS FROM `on_role_user` [ RunTime:0.0036s ]
+SQL: SELECT `role_id` FROM on_role_user a INNER JOIN on_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0556s ]
+SQL: UPDATE `on_users` SET `user_login`='zhaohuawei',`user_pass`='681ab49e8b67d08bff1b954d77ce6816d958314845a1a65c',`user_nicename`='admin',`user_email`='937768649@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='0.0.0.0',`last_login_time`='2016-04-26 22:07:20',`create_time`='2016-02-24 03:44:51',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '1' [ RunTime:0.0684s ]
+
+[ 2016-04-26T22:07:23+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Adddata&a=resourcelist&menuid=164
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-04-26T22:07:54+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Adddata&a=resourcelist&menuid=164
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-04-26T22:08:05+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Adddata&a=resourcelist&menuid=164
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-04-26T22:08:14+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Adddata&a=resourcelist&menuid=164
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-04-26T22:08:18+08:00 ] ::1 /onlineen0328/index.php?g=Admin&m=Adddata&a=resourcelist&menuid=164
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+

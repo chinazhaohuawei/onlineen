@@ -103,8 +103,16 @@ class IndexController extends HomeBaseController {
          * */
         $resourceid=$_GET['id'];
         $resource_urlinfo=$this->resource_model->where("resource_id = $resourceid")->field("resource_name,resource_url")->find();
-        $resource_url=substr($resource_urlinfo['resource_url'],0,31);
-        $resource_pass=substr($resource_urlinfo['resource_url'],33);
+        // $resource_url=substr($resource_urlinfo['resource_url'],0,31);
+        // $resource_pass=substr($resource_urlinfo['resource_url'],33);
+        $resource_down = explode(' ',$resource_urlinfo['resource_url']);
+        $resource_url = $resource_down[0];
+        $resource_pass = '&nbsp;&nbsp;';
+        foreach ($resource_down as $key => $value) {
+            if($key != 0){
+                $resource_pass = $resource_pass.$value;
+            }
+        }
         $this->assign("title",$resource_urlinfo['resource_name']);
         $this->assign("url",$resource_url);
         $this->assign("pass",$resource_pass);
@@ -119,8 +127,18 @@ class IndexController extends HomeBaseController {
         $courseid=$_GET['id'];
         $course_info=M('course')->where("courseid = $courseid")->field("course_title,course_down")->find();
 //        dump($course_info);
-        $course_url=substr($course_info['course_down'],0,31);
-        $course_pass=substr($course_info['course_down'],33);
+        // $course_url=substr($course_info['course_down'],0,31);
+        // $course_pass=substr($course_info['course_down'],33);
+
+        $course_down = explode(' ',$course_info['course_down']);
+        $course_url = $course_down[0];
+        $course_pass = '&nbsp;&nbsp;';
+        foreach ($course_down as $key => $value) {
+            if($key != 0){
+                $course_pass = $course_pass.$value;
+            }
+        }
+
         $this->assign("title",$course_info['course_title']);
         $this->assign("url",$course_url);
         $this->assign("pass",$course_pass);

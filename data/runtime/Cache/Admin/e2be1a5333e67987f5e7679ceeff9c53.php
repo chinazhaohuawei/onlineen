@@ -12,11 +12,11 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
 
-	<link href="/statics/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
-    <link href="/statics/simpleboot/css/simplebootadmin.css" rel="stylesheet">
-    <link href="/statics/js/artDialog/skins/default.css" rel="stylesheet" />
-    <link href="/statics/simpleboot/font-awesome/4.2.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
-    <link href="/tpl_admin/simpleboot/assets/css/myadmin_style.css" rel="stylesheet" />
+	<link href="/onlineen0328/statics/simpleboot/themes/<?php echo C('SP_ADMIN_STYLE');?>/theme.min.css" rel="stylesheet">
+    <link href="/onlineen0328/statics/simpleboot/css/simplebootadmin.css" rel="stylesheet">
+    <link href="/onlineen0328/statics/js/artDialog/skins/default.css" rel="stylesheet" />
+    <link href="/onlineen0328/statics/simpleboot/font-awesome/4.2.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+    <link href="/onlineen0328/tpl_admin/simpleboot/assets/css/myadmin_style.css" rel="stylesheet" />
     <style>
 		.length_3{width: 180px;}
 		form .input-order{margin-bottom: 0px;padding:3px;width:40px;}
@@ -24,13 +24,13 @@
 		.table-list{margin-bottom: 0px;}
 	</style>
 	<!--[if IE 7]>
-	<link rel="stylesheet" href="/statics/simpleboot/font-awesome/4.2.0/css/font-awesome-ie7.min.css">
+	<link rel="stylesheet" href="/onlineen0328/statics/simpleboot/font-awesome/4.2.0/css/font-awesome-ie7.min.css">
 
     <![endif]-->
 <script type="text/javascript">
 //全局变量
 var GV = {
-    DIMAUB: "/",
+    DIMAUB: "/onlineen0328/",
     JS_ROOT: "statics/js/",
     TOKEN: ""
 };
@@ -38,9 +38,9 @@ var GV = {
 <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/statics/js/jquery.js"></script>
-    <script src="/statics/js/wind.js"></script>
-    <script src="/statics/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/onlineen0328/statics/js/jquery.js"></script>
+    <script src="/onlineen0328/statics/js/wind.js"></script>
+    <script src="/onlineen0328/statics/simpleboot/bootstrap/js/bootstrap.min.js"></script>
 <?php if(APP_DEBUG): ?><style>
 		#think_page_trace_open{
 			z-index:9999;
@@ -110,7 +110,7 @@ var GV = {
                 <!--<button type="submit">更新</button>-->
                 <button type="submit" class="btn btn-primary btn_submit J_ajax_submit_btn">提交</button>
                 <button class="btn" type="reset">清空</button>
-                <!--<a class="btn" href="/admin/adddata/schoollist">清除</a>-->
+                <!--<a class="btn" href="/onlineen0328/index.php/Admin/Adddata/schoollist">清除</a>-->
             </div>
         </form>
     </div>
@@ -152,7 +152,7 @@ var GV = {
                     var resource_pic = document.getElementById("resource_pic");
                     resource_pic.value=data["info"];
                     var updiv = document.getElementById("modal-863110");
-                    updiv.style.background='url(/data/upload/resource/'+data['info']+') no-repeat center';
+                    updiv.style.background='url(/onlineen0328/data/upload/resource/'+data['info']+') no-repeat center';
                     updiv.style.backgroundSize="80px 80px";
                 }else{
                     alert("上传失败！请重试！");
@@ -181,7 +181,7 @@ var GV = {
                         $("#avatar_uploder").hide();
                         var $uploaded_area=$(".uploaded_avatar_area");
 //                        $uploaded_area.find("img").remove();
-                        var $img=$("<img/>").attr("src","/data/upload/resource/"+data.data.file);
+                        var $img=$("<img/>").attr("src","/onlineen0328/data/upload/resource/"+data.data.file);
 
                         $img.prependTo($uploaded_area);
 
@@ -211,6 +211,6 @@ var GV = {
         return false;
     }
 </script>
-<script src="/statics/js/common.js"></script>
+<script src="/onlineen0328/statics/js/common.js"></script>
 </body>
 </html>

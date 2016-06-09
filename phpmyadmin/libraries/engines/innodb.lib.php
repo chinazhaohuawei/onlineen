@@ -1,18 +1,20 @@
 <?php
 /* vim: set expandtab sw=4 ts=4 sts=4: */
 /**
- * @package phpMyAdmin-Engines
+ * @package PhpMyAdmin-Engines
  */
+
+if (! defined('PHPMYADMIN')) {
+    exit;
+}
 
 /**
  *
- * @package phpMyAdmin-Engines
+ * @package PhpMyAdmin-Engines
  */
 class PMA_StorageEngine_innodb extends PMA_StorageEngine
 {
     /**
-     * @uses    PMA_ENGINE_DETAILS_TYPE_NUMERIC
-     * @uses    PMA_ENGINE_DETAILS_TYPE_SIZE
      * @return  array
      */
     function getVariables()
@@ -27,7 +29,7 @@ class PMA_StorageEngine_innodb extends PMA_StorageEngine
             ),
             'innodb_autoextend_increment' => array(
                 'title' => __('Autoextend increment'),
-                'desc'  => __(' The increment size for extending the size of an autoextending tablespace when it becomes full.'),
+                'desc'  => __('The increment size for extending the size of an autoextending tablespace when it becomes full.'),
                 'type'  => PMA_ENGINE_DETAILS_TYPE_NUMERIC,
             ),
             'innodb_buffer_pool_size' => array(
@@ -121,8 +123,6 @@ class PMA_StorageEngine_innodb extends PMA_StorageEngine
     }
 
     /**
-     * @uses    $this->support
-     * @uses    PMA_ENGINE_SUPPORT_YES
      * @return  array   detail pages
      */
     function getInfoPages()
@@ -139,12 +139,6 @@ class PMA_StorageEngine_innodb extends PMA_StorageEngine
     /**
      * returns html tables with stats over inno db buffer pool
      *
-     * @uses    PMA_DBI_fetch_result()
-     * @uses    PMA_formatNumber()
-     * @uses    PMA_formatByteDown()
-     * @uses    join()
-     * @uses    htmlspecialchars()
-     * @uses    PMA_formatNumber()
      * @return  string  html table with stats
      */
     function getPageBufferpool()
@@ -272,8 +266,6 @@ class PMA_StorageEngine_innodb extends PMA_StorageEngine
     /**
      * returns InnoDB status
      *
-     * @uses    htmlspecialchars()
-     * @uses    PMA_DBI_fetch_value()
      * @return  string  result of SHOW INNODB STATUS inside pre tags
      */
     function getPageStatus()
@@ -286,8 +278,6 @@ class PMA_StorageEngine_innodb extends PMA_StorageEngine
     /**
      * returns content for page $id
      *
-     * @uses    $this->getInfoPages()
-     * @uses    array_key_exists()
      * @param   string  $id page id
      * @return  string  html output
      */

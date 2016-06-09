@@ -1,15 +1,122 @@
-[ 2016-06-09T01:09:34+08:00 ] 123.125.71.82 /Down/index/videodown/id/index.html
-ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index ) LIMIT 1' at line 1
+[ 2016-06-09T13:30:07+08:00 ] ::1 /onlineen0328/Down/Index/index.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
 
-[ 2016-06-09T03:21:47+08:00 ] 203.208.60.169 /down/index/videodown/id/index.html
-ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index ) LIMIT 1' at line 1
+[ 2016-06-09T13:30:08+08:00 ] ::1 /onlineen0328/Down/Index/resourcedetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
 
-[ 2016-06-09T03:27:14+08:00 ] 203.208.60.167 /down/index/typelist/id/index.html
-ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index ) LIMIT 1' at line 1
+[ 2016-06-09T13:30:10+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
 
-[ 2016-06-09T03:27:16+08:00 ] 203.208.60.160 /down/index/resourcedetail/id/index.html
-ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index ) LIMIT 1' at line 1
+[ 2016-06-09T13:30:25+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
 
-[ 2016-06-09T03:32:09+08:00 ] 203.208.60.161 /down/index/downdetail/id/index.html
-ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index ) LIMIT 1' at line 1
+[ 2016-06-09T13:33:30+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:33:32+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:33:44+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:33:47+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:34:59+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:35:16+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:35:25+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:36:00+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:36:17+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:36:40+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:37:40+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:37:52+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:37:55+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:38:53+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:41:03+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:41:59+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:45:29+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:45:56+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:45:58+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:46:12+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:46:22+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T13:46:24+08:00 ] ::1 /onlineen0328/Down/Index/downdetail/id/18.html
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceModel
+NOTIC: D方法实例化没找到模型类Common\Model\ResourceTypeModel
+
+[ 2016-06-09T14:42:02+08:00 ] ::1 /onlineen0328/Down/Index/index.html
+ERR: 无法加载控制器:Index
+
+[ 2016-06-09T14:43:16+08:00 ] ::1 /onlineen0328/Down/Index/index.html
+ERR: 无法加载控制器:Index
+
+[ 2016-06-09T14:43:22+08:00 ] ::1 /onlineen0328/Down/Index/index.html
+ERR: 无法加载控制器:Index
+
+[ 2016-06-09T14:43:41+08:00 ] ::1 /onlineen0328/Down/Index/index.html
+ERR: 无法加载控制器:Index
+
+[ 2016-06-09T14:43:47+08:00 ] ::1 /onlineen0328/Down/Index/index.html
+ERR: 无法加载控制器:Index
+
+[ 2016-06-09T15:15:01+08:00 ] ::1 /git-onlineen/https-::github.com:chinazhaohuawei:onlineen.git/Down/Index/index.html
+ERR: 无法加载控制器:Index
 
