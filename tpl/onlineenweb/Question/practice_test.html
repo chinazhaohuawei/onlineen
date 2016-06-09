@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <tc_include file="Public:head"/>
+    <title>在线做题-英语语法-商务英语-英语在线-专注英语资料免费分享-www.onlineen.cn</title>
+</head>
+<body>
+<tc_include file="Public:nav"/>
+<div class="question_box">
+    <div class="separate"></div>
+    <tc_include file="Public:question_banner" />
+    <div class="separate"></div>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="row-fluid">
+                    <div class="span3">
+                        <img class="img-thumbnail" src="__TMPL__Public/images/practice_test.png">
+                    </div>
+                    <div class="span9">
+                        <h1>综合模拟考试</h1>
+                        <ul contenteditable="false">
+                            <li>选择相应的试卷进行在线测试。</li>
+                            <li>该功能需登陆后使用。</li>
+                            <li>祝愿你取得好成绩！</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="page-header">
+        <h3 align="center">请选择题目类型</h3>
+    </div>
+
+
+    <ul id="myTab" class="nav nav-tabs">
+        <li class="dropdown active">
+            <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">
+                听力
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+                <li class="active"><a href="#1" tabindex="-1" data-toggle="tab">1</a></li>
+                <li><a href="#2" tabindex="-1" data-toggle="tab">2</a></li>
+            </ul>
+        </li>
+        <foreach name="typeinfo" item="vo">
+            <li class="dropdown">
+                <a href="#" id="myTabDrop{$vo.type_id}" class="dropdown-toggle" data-toggle="dropdown">
+                    {$vo.type_name}
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop">
+                    <foreach name="tagarr[$vo['type_id']]" item="tag">
+                        <li><a href="#{$tag.tag_id}" tabindex="-1" data-toggle="tab">{$tag.tag_name}</a></li>
+                    </foreach>
+                </ul>
+            </li>
+        </foreach>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <foreach name="question_arr" item="vo">
+            <div class="tab-pane fade in active" id="{$vo}">
+                <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+            </div>
+        </foreach>
+
+    </div>
+</div>
+
+
+<tc_include file="Public:footer"/>
+
+<script src="__TMPL__Public/js/slide.js"></script>
+
+</body>
+
+</html>

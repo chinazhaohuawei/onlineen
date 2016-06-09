@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <tc_include file="Public:head" />
+    <title>{$course_data[0][course_title]}-课程详情-英语在线</title>
+</head>
+<body>
+    <tc_include file="Public:nav" />
+    <div class="c_details_favorite_box">
+        <div class="links">
+            <a><div class="add_favorite"><label></label><span>添加收藏</span></div></a>
+            <div class="add_favorite_yet"><label></label><span>已收藏</span></div>
+
+        </div>
+    </div>
+    <div class="c_details_bar_box">
+        <div class="c_details">
+            &nbsp;
+            <h1>{$course_data[0][course_title]}</h1>
+            <p>{$course_data[0][course_info]}</p>
+        </div>
+    </div>
+    <div class="c_details_main_box">
+        <div class="c_details_main">
+            <div class="c_details_main_first">
+                <div class="top"></div>
+                <h3><span>课程</span>&nbsp;列表</h3>
+                <div class="bottom">COURSE LIST</div>
+            </div>
+            <foreach name="video_data" item="vo">
+            <div class="course_list">
+                <a href="{:U('Portal/Course/video',array('courseid'=>$vo['course_id'],'videoid'=>$vo['video_id']))}" target="_blank">
+                    <img style='background: url("__ROOT__/data/video/{$vo.video_pic}"); background-size: 124px 85px;' src="__TMPL__/Public/images/playwidth.png" title="{$vo.video_info}">
+                </a>
+                <div class="right">
+                    <h3>
+                        <php>
+                            echo msubstr($vo['video_title'],0,17,'utf-8');
+                        </php>
+                        <!--{$vo.video_title|msubstr=###,0,36,'utf-8',false}-->
+                    </h3>
+                    <p>{$vo.video_info}</p>
+                </div>
+            </div>
+            </foreach>
+            <if condition="$pagenum neq 1">
+                <div class="course_list_page">
+                    <!--<span style="width: 80px">上一页</span>-->
+                    {$Page}
+                    <!--<span style="width: 80px">下一页</span>-->
+                </div>
+            </if>
+            <div style="clear: both"></div>
+            <div class="video_footer_space"></div>
+        </div>
+    </div>
+    <tc_include file="Public:footer" />
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <tc_include file="Public:head" />
+    <title>英语语法-商务英语-专注英语资料免费分享-英语在线-www.onlineen.cn</title>
+</head>
+<body>
+<tc_include file="Public:nav" />
+
+    <div class="project">
+        <div class="slide">
+            <ul>
+                <li>
+                    <div class="item_title"></div>
+                    <div class="item_info"></div>
+                </li>
+                <li>
+                    <div class="item_title2"></div>
+                    <div class="item_info"></div>
+                </li>
+                <li>
+                    <div class="item_title3"></div>
+                    <div class="item_info"></div>
+                </li>
+            </ul>
+            <p class="slide_btn">
+                <a class="pull-left" href="javascript:;"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="pull-right" href="javascript:;"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="course_box">
+        <div class="course_main">
+            <div class="course_left">
+                <div class="left"></div>
+                <div class="right">
+                    <div class="model_space"></div>
+                    <a href="{:U('Portal/Index/index',array('type'=>1))}#related_course">
+                        <if condition="$type eq 1">
+                            <div class="model_check">
+                                <div class="cion"><label class="glyphicon glyphicon-bell"></label></div>
+                                <div class="title">音标学习</div>
+                            </div>
+                            <else/>
+                            <div class="model">
+                                <div class="cion"><label class="glyphicon glyphicon-bell"></label></div>
+                                <div class="title">音标学习</div>
+                            </div>
+                        </if>
+
+                    </a>
+                    <div class="model_space"></div>
+                    <a href="{:U('Portal/Index/index',array('type'=>2))}#related_course">
+                        <if condition="$type eq 2">
+                            <div class="model_check">
+                                <div class="cion"><label class="glyphicon glyphicon-bishop"></label></div>
+                                <div class="title">初级英语</div>
+                            </div>
+                            <else/>
+                            <div class="model">
+                                <div class="cion"><label class="glyphicon glyphicon-bishop"></label></div>
+                                <div class="title">初级英语</div>
+                            </div>
+                        </if>
+                    </a>
+                    <div class="model_space"></div>
+                    <a href="{:U('Portal/Index/index',array('type'=>3))}#related_course">
+                        <if condition="$type eq 3">
+                            <div class="model_check">
+                                <div class="cion"><label class="glyphicon glyphicon-pawn"></label></div>
+                                <div class="title">中级英语</div>
+                            </div>
+                            <else/>
+                            <div class="model">
+                                <div class="cion"><label class="glyphicon glyphicon-pawn"></label></div>
+                                <div class="title">中级英语</div>
+                            </div>
+                        </if>
+                    </a>
+                    <div class="model_space"></div>
+                    <a href="{:U('Portal/Index/index',array('type'=>4))}#related_course">
+                        <if condition="$type eq 4">
+                            <div class="model_check">
+                                <div class="cion"><label class="glyphicon glyphicon-queen"></label></div>
+                                <div class="title">英语四级</div>
+                            </div>
+                            <else/>
+                            <div class="model">
+                                <div class="cion"><label class="glyphicon glyphicon-queen"></label></div>
+                                <div class="title">英语四级</div>
+                            </div>
+                        </if>
+                    </a>
+                    <div class="model_space"></div>
+                    <a href="{:U('Portal/Index/index',array('type'=>5))}#related_course">
+                        <if condition="$type eq 5">
+                            <div class="model_check">
+                                <div class="cion"><label class="glyphicon glyphicon-king"></label></div>
+                                <div class="title">英语六级</div>
+                            </div>
+                            <else/>
+                            <div class="model">
+                                <div class="cion"><label class="glyphicon glyphicon-king"></label></div>
+                                <div class="title">英语六级</div>
+                            </div>
+                        </if>
+                    </a>
+                    <div class="model_space"></div>
+                    <a href="{:U('Portal/Index/index',array('type'=>6))} #related_course">
+                        <if condition="$type eq 6">
+                            <div class="model_check">
+                                <div class="cion"><label class="glyphicon glyphicon-knight"></label></div>
+                                <div class="title">考研英语</div>
+                            </div>
+                            <else/>
+                            <div class="model">
+                                <div class="cion"><label class="glyphicon glyphicon-knight"></label></div>
+                                <div class="title">考研英语</div>
+                            </div>
+                        </if>
+
+                    </a>
+                </div>
+            </div>
+            <div class="course_center"></div>
+            <div class="course_right">
+                <div class="first" id="related_course">相关课程</div>
+                <foreach name="course_data" item="vo">
+                    <div class="course_list">
+                        <a href="{:U('Portal/Course/index',array('courseid'=>$vo['courseid']))}" target="_blank">
+                            <img  style='background: url("__ROOT__/data/upload/course/{$vo.course_pic}");background-size: 125px 125px;' src="__TMPL__/Public/images/play.png">
+                        </a>
+                        <div class="list_center">
+                            <div class="list_center_top"><a href="{:U('Portal/Course/index',array('courseid'=>$vo['courseid']))}" target="_blank">{$vo.course_title}</a></div>
+                            <div class="list_center_bottom">
+                                <php>
+                                    echo msubstr($vo['course_info'],0,100,'utf-8');
+                                </php>
+                                </div>
+                        </div>
+                        <div class="list_right">
+                            <a href="{:U('Portal/Course/index',array('courseid'=>$vo['courseid']))}"><div class="list_right_top"><label class="glyphicon glyphicon-play"></label></div></a>
+                            <a href="{:U('Down/index/videodown',array('id'=>$vo['courseid']))}" target="_blank"><div class="list_right_bottom"><label class="glyphicon glyphicon-save"></label></div></a>
+                        </div>
+                    </div>
+                </foreach>
+
+                <if condition="$Page neq NULL">
+                    <div class="course_page">
+                        <div class="course_page_text">
+                            <!--<span>上一页</span>-->
+                            <!--<ul>-->
+                                <!--<li class="li_check">1</li>-->
+                                <!--<li>2</li>-->
+
+                            <!--</ul>-->
+                            <!--<span>下一页</span>-->
+                            {$Page}
+                        </div>
+                    </div>
+                </if>
+
+            </div>
+        </div>
+    </div>
+    <tc_include file="Public:footer" />
+<tc_include file="Public:script" />
+ <script src="__TMPL__Public/js/slide.js"></script>
+
+
+</body>
+
+</html>

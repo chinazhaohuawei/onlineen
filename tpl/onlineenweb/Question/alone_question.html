@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <tc_include file="Public:head"/>
+    <title>在线做题-英语语法-商务英语-英语在线-专注英语资料免费分享-www.onlineen.cn</title>
+</head>
+<body>
+<tc_include file="Public:nav"/>
+<div class="question_box">
+    <div class="separate"></div>
+    <tc_include file="Public:question_banner" />
+    <div class="separate"></div>
+
+    <ul id="myTab" class="nav nav-tabs">
+        <foreach name="question_arr" item="vo">
+            <li>
+                <button  id="myTabDrop{$vo.question_id}" class="btn" data-toggle="dropdown" type="button" class="btn btn-default">
+                    <a class="question-btn-a" href="#{$vo.question_id}" tabindex="-1" data-toggle="tab">{$key+1}</a>
+                </button>
+            </li>
+        </foreach>
+    </ul>
+
+    <div id="myTabContent" class="tab-content">
+        <foreach name="question_arr" item="vo">
+            <div class="tab-pane fade" id="{$vo.question_id}">
+                <div class="question-content">
+                    <h3>题目：</h3>{$vo.question_content}
+                </div>
+
+            </div>
+        </foreach>
+    </div>
+</div>
+<div style="height: 50px"></div>
+
+<tc_include file="Public:footer"/>
+
+<script src="__TMPL__Public/js/slide.js"></script>
+
+</body>
+
+</html>

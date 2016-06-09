@@ -1,0 +1,394 @@
+@charset "utf8";
+
+.mauto(){
+	margin: 0 auto;
+}
+.fl(){
+	float: left;
+}
+.fr(){
+	float: right;
+}
+.dis-ib(){
+	display: inline-block;
+}
+h1, h2, h3, h4, h5 {
+	padding: 0;
+	margin: 0;
+}
+
+.centerBox(){
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+html, body {
+	width: 100%;
+	min-width: 1000px;
+}
+.proinfo_box {
+	@bWidth: 100%;
+	@cWidth: 1000px;
+	@h1font: 30px;
+	
+	width: @bWidth;
+	min-width: @cWidth;
+	.mauto();
+
+	.header_bar {
+		@bh:60px;
+		@color: #376175;
+		width: @bWidth;
+		min-width: @cWidth;
+		height: @bh;
+		background-color: @color;
+		overflow: hidden;
+		.links {
+			@color:#fff;
+			@lh: 37px;
+			width: @cWidth;
+			height: @lh;
+			margin: (@bh - @lh)/2 auto;
+			.bgpos () {
+				background-position: 25px 0;
+			}
+			.add {
+				background: url(../images/project/add.png) no-repeat;
+				.bgpos();
+			}
+			.join {
+				background: url(../images/project/join.png) no-repeat;
+				.bgpos();
+			}
+			.fund {
+				background: url(../images/project/fund.png) no-repeat;
+				.bgpos();
+			}
+			a {
+				@aw: 165px;
+				width: @aw;
+				height: @lh;
+				padding-right: 22px;
+				line-height: @lh;
+				text-align: right;
+				position: relative;
+				.dis-ib();
+				.fr();
+				color: @color;
+				&:after {
+					content: "";
+					display: block;
+					width: 1px;
+					height: @lh;
+					background: #397185;
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
+				&:first-child:after{
+					display: none;
+				}
+			}
+		}
+	}
+	.header_info {
+		@fcolor:#fff;
+
+		width: @bWidth;
+		min-width: @cWidth;
+		height: 292px;
+		background: url(../images/project/header_info_bg.jpg) center center no-repeat;
+		overflow: hidden;
+		color: @fcolor;
+
+		& > h1 {
+			@h1: 90px;
+			width: @cWidth - 20;
+			height: @h1;
+			padding: 30px 0;
+			margin: 6px auto 0;
+			border-bottom: 1px solid #bddff5;
+			font-size: @h1font;
+			font-weight: bolder;
+		}
+		& > h1 small {
+			margin-left: 12px;
+			font-size: 16px;
+			color: @fcolor;
+		}
+		& > p {
+			width: @cWidth - 20;
+			margin: 30px auto 0;
+			text-indent: 2em;
+			line-height: 25px;
+		}
+	}
+
+	.content {
+		@markcolor: #23bc7b;
+
+		width: @bWidth;
+		background: url(../images/project/proinfo_bg.png) 0 0 repeat;
+
+		.item {
+			@ptop: 68px;
+			width: @bWidth;
+			margin: 0 auto;
+			padding-top: @ptop;
+
+			h3 {
+				width: 200px;
+				.mauto();
+				text-align: center;
+				font-size: 25px;
+				font-weight: bolder;
+
+				& > .mcolor {
+					color: @markcolor;
+				}
+			} 
+			.h3_info {
+				@mb: 48px;
+				
+				width: 200px;
+				margin: 10px auto @mb;
+				text-align: center;
+				color: #b4b4b4;
+				font-size: 18px;
+			}
+		}
+
+		.team_box {
+			width: @cWidth;
+			.mauto();
+		}
+		.thumbnail {
+			@color: #686868;
+			@thumbW: 1000px;
+			@thumbH: 160px;
+			@pt: 38px;
+			@member_fontsize: 20px;
+
+			width: @thumbW;
+			height: @thumbH + @pt*2;
+			padding: @pt 0;
+			border: 0;
+
+			.img_box {
+				width: @thumbH;
+				height: @thumbH;
+				position: relative;
+				border-radius: @thumbH/2;
+				border: 1px solid #dbdbdb;
+				overflow: hidden;
+				.fl();
+
+				img {
+					position: absolute;
+					top: 0;
+					.centerBox();
+				}
+			}
+			.p_style() {
+				width: auto;
+				text-align: left;
+				line-height: 30px;
+				color: @color;
+			}
+			.caption {
+				@ml: 30px;
+				width: @thumbW - @thumbH - @ml;
+				height: @thumbH;
+				padding: 0;
+				margin-left: @ml;
+				.fl();
+				.caption_info {
+					@pH: 90px;
+					height: @pH;
+					margin: (@thumbH - @pH)/2 0 0;
+					.p_style();
+					font-size: 16px;
+				}			
+			}
+			.caption_member {
+				@mt: 18px;
+				.border_bottom() {
+					border-bottom: 1px solid #dedede;
+				}
+
+				margin-top: @mt;
+
+				.member_intro {
+					width: 300px;
+					margin-right: 10px;
+					.fl();
+
+					h4 {
+						width: 200px;
+						padding-bottom: 20px;
+						margin-bottom: 20px;
+						font-size: @member_fontsize;
+						color: @markcolor;
+						.border_bottom();
+						
+						span {
+							margin-left: 14px;
+							font-size: @member_fontsize - 4;
+							color: #5d6a73;
+						}
+					}
+					p {
+						font-size: 14px;
+						.p_style();
+					}
+				}
+				.member_info {
+					width: 500px;
+					height: auto;
+					padding-right: 20px;
+					.fl();
+
+					p {
+						width: 100%;
+						height: 100%;
+						margin-top: 38px;
+						text-indent: 2em;
+					}
+				}
+			}	
+		}
+	}
+	.produce {
+		padding-bottom: 92px;
+		background-color: #eff2f5;
+	}
+	.produce_box {
+		width: @cWidth;
+		.mauto();
+	}
+	.slidebox {		
+		@itemwidth: 200px;
+		@itemheight: 437px;
+		@itemmr: 20px;
+
+		@imgw: 178px;
+		@imgh: 317px;
+
+		padding: 0 (@cWidth - @itemwidth*4 - @itemmr*3)/2;
+
+		.wrap {
+			height: @itemheight;
+			.mauto();
+		}
+		.slide_item {
+			@pt: 51px;
+			@pb: 59px;
+			@pl: 11px;
+
+			width: @itemwidth;
+			height: @itemheight;
+			margin-right: @itemmr;
+
+			padding-top: @pt;
+			padding-bottom: @pb;
+			padding-left: @pl;
+			padding-right: @pl;
+
+			.fl();
+			&:last-child {
+				margin-right: 0;
+			}
+			background: url(../images/project/phone_wrap.png) center center no-repeat;
+
+			> img {
+				width: @imgw;
+				height: @imgh;
+			}
+		}
+	}
+
+	.event {
+		background-color: #fbfcfd;
+		padding-bottom: 100px;
+	}
+
+	.timeline {
+		@h: 300px;
+		@lineW: 1px;
+		@linecolor: #c6c6c6;
+		@timecolor: #23bc7b;
+		@processW: 800px;
+		@processH: 37px;
+		@infoW: 350px;
+
+		width: @cWidth;
+		height: @h;
+		position: relative;
+		padding-top: 40px;
+		.mauto();
+
+		.line {
+			width: @lineW;
+			height: @h;
+			.centerBox();
+			background-color: @linecolor;
+			z-index: 0;
+		}
+		.process {
+			width: @processW;
+			height: @processH;
+			position: relative;
+			z-index: 1;
+			margin: 0 auto 55px;
+			background-color: #fbfcfd;
+
+			// &:first-child {
+			// 	margin-top: 40px;
+			// }
+
+			.time {
+				width: 326px;
+				height: @processH;
+				line-height: @processH;
+				color: @timecolor;
+				font-size: 16px;
+				text-align: right;
+				float: left;
+			}
+			.circle {
+
+				width: @processH - 17;
+				height: @processH - 17;
+				border: 1px solid @linecolor;
+				border-radius: (@processH - 17)/2;
+				.centerBox();
+
+				&:after {
+					content: "";
+					display: inline-block;
+					width: @processH - 17 - 6;
+					height: @processH - 17 - 6;
+					border-radius: (@processH - 17 - 6)/2;
+					.centerBox();
+					background-color: @timecolor;
+				}
+			}
+			.info {
+				width: @infoW;
+				height: @processH;
+				line-height: @processH;
+				position: absolute;
+				right: 0;
+				float: left;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		}
+	}
+	
+}
+

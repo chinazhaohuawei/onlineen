@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <tc_include file="Public:head" />
+    <title>英语语法-商务英语-专注英语资料免费分享下载-英语在线-www.onlineen.cn</title>
+</head>
+<body>
+<tc_include file="Public:nav" />
+<div class="downbox">
+    <tc_include file="Public:downnav" />
+    <div class="main">
+        <div class="title">热门推荐</div>
+        <div class="content">
+            <foreach name="recommend" item="vo">
+                <div class="datalist">
+                    <a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">
+                        <div class="datalist_pic">
+                            <img src="__ROOT__/data/upload/resource/{$vo.resource_pic}">
+                        </div>
+                    </a>
+                    <div class="datalist_con">
+                        <b><a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">{$vo.resource_name}</a></b>
+                        <p>{$vo.typename}</p>
+                    </div>
+                </div>
+            </foreach>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="title">{$resource2[0]["typename"]}</div>
+        <div class="content">
+            <foreach name="resource2" item="vo">
+                <div class="datalist">
+                    <a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">
+                        <div class="datalist_pic">
+                            <img src="__ROOT__/data/upload/resource/{$vo.resource_pic}">
+                        </div>
+                    </a>
+                    <div class="datalist_con">
+                        <b><a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">{$vo.resource_name}</a></b>
+                        <p>{$vo.typename}</p>
+                    </div>
+                </div>
+            </foreach>
+            <div class="datalist">
+                <a href="{:U('Down/Index/typelist',array('id'=>$resource2[0]['typeid']))}">
+                    <div class="datalist_pic">
+                        <img src="__TMPL__Public/images/resource_more.png">
+                    </div>
+                </a>
+                <div class="datalist_con">
+                    <b><a href="{:U('Down/Index/typelist',array('id'=>$resource2[0]['typeid']))}">查看更多...</a></b>
+                    <p>查看更多...</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="title">{$resource3[0]["typename"]}</div>
+        <div class="content">
+            <foreach name="resource3" item="vo">
+                <div class="datalist">
+                    <a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">
+                        <div class="datalist_pic">
+                            <img src="__ROOT__/data/upload/resource/{$vo.resource_pic}">
+                        </div>
+                    </a>
+                    <div class="datalist_con">
+                        <b><a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">{$vo.resource_name}</a></b>
+                        <p>{$vo.typename}</p>
+                    </div>
+                </div>
+            </foreach>
+            <div class="datalist">
+                <a href="{:U('Down/Index/typelist',array('id'=>$resource3[0]['typeid']))}">
+                    <div class="datalist_pic">
+                        <img src="__TMPL__Public/images/resource_more.png">
+                    </div>
+                </a>
+                <div class="datalist_con">
+                    <b><a href="{:U('Down/Index/typelist',array('id'=>$resource3[0]['typeid']))}">查看更多...</a></b>
+                    <p>查看更多...</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="title">{$resource4[0]["typename"]}</div>
+        <div class="content">
+            <foreach name="resource4" item="vo">
+                <div class="datalist">
+                    <a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">
+                        <div class="datalist_pic">
+                            <img src="__ROOT__/data/upload/resource/{$vo.resource_pic}">
+                        </div>
+                    </a>
+                    <div class="datalist_con">
+                        <b><a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">{$vo.resource_name}</a></b>
+                        <p>{$vo.typename}</p>
+                    </div>
+                </div>
+            </foreach>
+            <div class="datalist">
+                <a href="{:U('Down/Index/typelist',array('id'=>$resource4[0]['typeid']))}">
+                    <div class="datalist_pic">
+                        <img src="__TMPL__Public/images/resource_more.png">
+                    </div>
+                </a>
+                <div class="datalist_con">
+                    <b><a href="{:U('Down/Index/typelist',array('id'=>$resource4[0]['typeid']))}">查看更多...</a></b>
+                    <p>查看更多...</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="title">{$resource5[0]["typename"]}</div>
+        <div class="content">
+            <foreach name="resource5" item="vo">
+                <div class="datalist">
+                    <a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">
+                        <div class="datalist_pic">
+                            <img src="__ROOT__/data/upload/resource/{$vo.resource_pic}">
+                        </div>
+                    </a>
+                    <div class="datalist_con">
+                        <b><a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">{$vo.resource_name}</a></b>
+                        <p>{$vo.typename}</p>
+                    </div>
+                </div>
+            </foreach>
+            <div class="datalist">
+                <a href="{:U('Down/Index/typelist',array('id'=>$resource5[0]['typeid']))}">
+                    <div class="datalist_pic">
+                        <img src="__TMPL__Public/images/resource_more.png">
+                    </div>
+                </a>
+                <div class="datalist_con">
+                    <b><a href="{:U('Down/Index/typelist',array('id'=>$resource5[0]['typeid']))}">查看更多...</a></b>
+                    <p>查看更多...</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="title">{$resource6[0]["typename"]}</div>
+        <div class="content">
+            <foreach name="resource6" item="vo">
+                <div class="datalist">
+                    <a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">
+                        <div class="datalist_pic">
+                            <img src="__ROOT__/data/upload/resource/{$vo.resource_pic}">
+                        </div>
+                    </a>
+                    <div class="datalist_con">
+                        <b><a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">{$vo.resource_name}</a></b>
+                        <p>{$vo.typename}</p>
+                    </div>
+                </div>
+            </foreach>
+            <div class="datalist">
+                <a href="{:U('Down/Index/typelist',array('id'=>$resource6[0]['typeid']))}">
+                    <div class="datalist_pic">
+                        <img src="__TMPL__Public/images/resource_more.png">
+                    </div>
+                </a>
+                <div class="datalist_con">
+                    <b><a href="{:U('Down/Index/typelist',array('id'=>$resource6[0]['typeid']))}">查看更多...</a></b>
+                    <p>查看更多...</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="title">{$resource7[0]["typename"]}</div>
+        <div class="content">
+            <foreach name="resource7" item="vo">
+                <div class="datalist">
+                    <a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">
+                        <div class="datalist_pic">
+                            <img src="__ROOT__/data/upload/resource/{$vo.resource_pic}">
+                        </div>
+                    </a>
+                    <div class="datalist_con">
+                        <b><a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">{$vo.resource_name}</a></b>
+                        <p>{$vo.typename}</p>
+                    </div>
+                </div>
+            </foreach>
+            <div class="datalist">
+                <a href="{:U('Down/Index/typelist',array('id'=>$resource7[0]['typeid']))}">
+                    <div class="datalist_pic">
+                        <img src="__TMPL__Public/images/resource_more.png">
+                    </div>
+                </a>
+                <div class="datalist_con">
+                    <b><a href="{:U('Down/Index/typelist',array('id'=>$resource7[0]['typeid']))}">查看更多...</a></b>
+                    <p>查看更多...</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="title">{$resource8[0]["typename"]}</div>
+        <div class="content">
+            <foreach name="resource8" item="vo">
+                <div class="datalist">
+                    <a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">
+                        <div class="datalist_pic">
+                            <img src="__ROOT__/data/upload/resource/{$vo.resource_pic}">
+                        </div>
+                    </a>
+                    <div class="datalist_con">
+                        <b><a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">{$vo.resource_name}</a></b>
+                        <p>{$vo.typename}</p>
+                    </div>
+                </div>
+            </foreach>
+            <div class="datalist">
+                <a href="{:U('Down/Index/typelist',array('id'=>$resource8[0]['typeid']))}">
+                    <div class="datalist_pic">
+                        <img src="__TMPL__Public/images/resource_more.png">
+                    </div>
+                </a>
+                <div class="datalist_con">
+                    <b><a href="{:U('Down/Index/typelist',array('id'=>$resource8[0]['typeid']))}">查看更多...</a></b>
+                    <p>查看更多...</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="title">{$resource9[0]["typename"]}</div>
+        <div class="content">
+            <foreach name="resource9" item="vo">
+                <div class="datalist">
+                    <a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">
+                        <div class="datalist_pic">
+                            <img src="__ROOT__/data/upload/resource/{$vo.resource_pic}">
+                        </div>
+                    </a>
+                    <div class="datalist_con">
+                        <b><a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">{$vo.resource_name}</a></b>
+                        <p>{$vo.typename}</p>
+                    </div>
+                </div>
+            </foreach>
+            <div class="datalist">
+                <a href="{:U('Down/Index/typelist',array('id'=>$resource9[0]['typeid']))}">
+                    <div class="datalist_pic">
+                        <img src="__TMPL__Public/images/resource_more.png">
+                    </div>
+                </a>
+                <div class="datalist_con">
+                    <b><a href="{:U('Down/Index/typelist',array('id'=>$resource9[0]['typeid']))}">查看更多...</a></b>
+                    <p>查看更多...</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="title">{$resource10[0]["typename"]}</div>
+        <div class="content">
+            <foreach name="resource10" item="vo">
+                <div class="datalist">
+                    <a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">
+                        <div class="datalist_pic">
+                            <img src="__ROOT__/data/upload/resource/{$vo.resource_pic}">
+                        </div>
+                    </a>
+                    <div class="datalist_con">
+                        <b><a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">{$vo.resource_name}</a></b>
+                        <p>{$vo.typename}</p>
+                    </div>
+                </div>
+            </foreach>
+            <div class="datalist">
+                <a href="{:U('Down/Index/typelist',array('id'=>$resource10[0]['typeid']))}">
+                    <div class="datalist_pic">
+                        <img src="__TMPL__Public/images/resource_more.png">
+                    </div>
+                </a>
+                <div class="datalist_con">
+                    <b><a href="{:U('Down/Index/typelist',array('id'=>$resource10[0]['typeid']))}">查看更多...</a></b>
+                    <p>查看更多...</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<tc_include file="Public:footer" />
+</body>
+
+</html>

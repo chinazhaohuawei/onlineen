@@ -1,0 +1,18 @@
+<div class="downnav_box">
+    <div class="downnav">
+        <div class="navdiv">
+            <a class="a_left" href="{:U('Down/Index/typelist',array('id'=>2))}">
+                听力
+            </a>
+        </div>
+        <foreach name="typeinfo_nav" item="vo">
+            <div class="navdiv">
+                <a href="{:U('Down/Index/typelist',array('id'=>$vo['type_id']))}">
+                    {$vo.type_name}
+                </a>
+            </div>
+        </foreach>
+
+    </div>
+</div>
+<tc_include file="Public:horizontal_advert" />

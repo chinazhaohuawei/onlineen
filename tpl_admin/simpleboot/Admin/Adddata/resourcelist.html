@@ -1,0 +1,50 @@
+<admintpl file="header"/>
+<body class="J_scroll_fixed">
+<div class="wrap J_check_wrap">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="">资源管理</a></li>
+    </ul>
+    <table class="table table-hover table-bordered">
+        <thead>
+        <tr>
+            <th width="50">资源ID</th>
+            <th>资源名称</th>
+            <th>资源类型</th>
+            <th>资源简介</th>
+            <th>资源大小</th>
+            <th>资源封面</th>
+            <th>资源地址</th>
+            <th>创建时间</th>
+            <th width="120">管理操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <foreach name="resource" item="vo">
+            <tr>
+                <td>{$vo.resource_id}</td>
+                <td>{$vo.resource_name}</td>
+                <td>{$vo.resource_typename|default="未分类"}</td>
+                <td>{$vo.resource_info|substr=###,0,60}</td>
+                <td>{$vo.resource_size}</td>
+                <td><img src="__ROOT__/data/upload/resource/{$vo.resource_pic}" style="height: 50px"></td>
+                <td>{$vo.resource_url}</td>
+                <td>{$vo.resource_time|date='Y-m-d',###}</td>
+                <td>
+                    <a href='{:U("change",array("id"=>$vo["resource_id"]))}'>修改</a> |
+                    <a href="{:U('delete_re',array('id'=>$vo['resource_id']))}" class="J_ajax_dialog_btn"
+                       data-msg="您确定要删除此资源吗？">删除</a> |
+                    <if condition="$vo['recommend'] eq 0">
+                        <a href="{:U('recommend',array('id'=>$vo['resource_id']))}" class="J_ajax_dialog_btn" data-msg="您确定要推荐此资源吗？">推荐</a>
+                        <else />
+                        <a href="{:U('recommend_cancel',array('id'=>$vo['resource_id']))}" class="J_ajax_dialog_btn" data-msg="您确定要取消推荐吗？">取消推荐</a>
+                    </if>
+                </td>
+            </tr>
+        </foreach>
+        </tbody>
+    </table>
+    <div class="pagination">{$page}</div>
+</div>
+<script src="__ROOT__/statics/js/common.js"></script>
+</body>
+</html>

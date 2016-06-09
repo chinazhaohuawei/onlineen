@@ -1,0 +1,313 @@
+@charset "utf8";
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  min-width: 1000px;
+}
+.proinfo_box {
+  width: 100%;
+  min-width: 1000px;
+  margin: 0 auto;
+}
+.proinfo_box .header_bar {
+  width: 100%;
+  min-width: 1000px;
+  height: 60px;
+  background-color: #376175;
+  overflow: hidden;
+}
+.proinfo_box .header_bar .links {
+  width: 1000px;
+  height: 37px;
+  margin: 11.5px auto;
+}
+.proinfo_box .header_bar .links .add {
+  background: url(../images/project/add.png) no-repeat;
+  background-position: 25px 0;
+}
+.proinfo_box .header_bar .links .join {
+  background: url(../images/project/join.png) no-repeat;
+  background-position: 25px 0;
+}
+.proinfo_box .header_bar .links .fund {
+  background: url(../images/project/fund.png) no-repeat;
+  background-position: 25px 0;
+}
+.proinfo_box .header_bar .links a {
+  width: 165px;
+  height: 37px;
+  padding-right: 22px;
+  line-height: 37px;
+  text-align: right;
+  position: relative;
+  display: inline-block;
+  float: right;
+  color: #ffffff;
+}
+.proinfo_box .header_bar .links a:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 37px;
+  background: #397185;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.proinfo_box .header_bar .links a:first-child:after {
+  display: none;
+}
+.proinfo_box .header_info {
+  width: 100%;
+  min-width: 1000px;
+  height: 292px;
+  background: url(../images/project/header_info_bg.jpg) center center no-repeat;
+  overflow: hidden;
+  color: #ffffff;
+}
+.proinfo_box .header_info > h1 {
+  width: 980px;
+  height: 90px;
+  padding: 30px 0;
+  margin: 6px auto 0;
+  border-bottom: 1px solid #bddff5;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.proinfo_box .header_info > h1 small {
+  margin-left: 12px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.proinfo_box .header_info > p {
+  width: 980px;
+  margin: 30px auto 0;
+  text-indent: 2em;
+  line-height: 25px;
+}
+.proinfo_box .content {
+  width: 100%;
+  background: url(../images/project/proinfo_bg.png) 0 0 repeat;
+}
+.proinfo_box .content .item {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 68px;
+}
+.proinfo_box .content .item h3 {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.proinfo_box .content .item h3 > .mcolor {
+  color: #23bc7b;
+}
+.proinfo_box .content .item .h3_info {
+  width: 200px;
+  margin: 10px auto 48px;
+  text-align: center;
+  color: #b4b4b4;
+  font-size: 18px;
+}
+.proinfo_box .content .team_box {
+  width: 1000px;
+  margin: 0 auto;
+}
+.proinfo_box .content .thumbnail {
+  width: 1000px;
+  height: 236px;
+  padding: 38px 0;
+  border: 0;
+}
+.proinfo_box .content .thumbnail .img_box {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  border-radius: 80px;
+  border: 1px solid #dbdbdb;
+  overflow: hidden;
+  float: left;
+}
+.proinfo_box .content .thumbnail .img_box img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.proinfo_box .content .thumbnail .caption {
+  width: 810px;
+  height: 160px;
+  padding: 0;
+  margin-left: 30px;
+  float: left;
+}
+.proinfo_box .content .thumbnail .caption .caption_info {
+  height: 90px;
+  margin: 35px 0 0;
+  width: auto;
+  text-align: left;
+  line-height: 30px;
+  color: #686868;
+  font-size: 16px;
+}
+.proinfo_box .content .thumbnail .caption_member {
+  margin-top: 18px;
+}
+.proinfo_box .content .thumbnail .caption_member .member_intro {
+  width: 300px;
+  margin-right: 10px;
+  float: left;
+}
+.proinfo_box .content .thumbnail .caption_member .member_intro h4 {
+  width: 200px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #23bc7b;
+  border-bottom: 1px solid #dedede;
+}
+.proinfo_box .content .thumbnail .caption_member .member_intro h4 span {
+  margin-left: 14px;
+  font-size: 16px;
+  color: #5d6a73;
+}
+.proinfo_box .content .thumbnail .caption_member .member_intro p {
+  font-size: 14px;
+  width: auto;
+  text-align: left;
+  line-height: 30px;
+  color: #686868;
+}
+.proinfo_box .content .thumbnail .caption_member .member_info {
+  width: 500px;
+  height: auto;
+  padding-right: 20px;
+  float: left;
+}
+.proinfo_box .content .thumbnail .caption_member .member_info p {
+  width: 100%;
+  height: 100%;
+  margin-top: 38px;
+  text-indent: 2em;
+}
+.proinfo_box .produce {
+  padding-bottom: 92px;
+  background-color: #eff2f5;
+}
+.proinfo_box .produce_box {
+  width: 1000px;
+  margin: 0 auto;
+}
+.proinfo_box .slidebox {
+  padding: 0 70px;
+}
+.proinfo_box .slidebox .wrap {
+  height: 437px;
+  margin: 0 auto;
+}
+.proinfo_box .slidebox .slide_item {
+  width: 200px;
+  height: 437px;
+  margin-right: 20px;
+  padding-top: 51px;
+  padding-bottom: 59px;
+  padding-left: 11px;
+  padding-right: 11px;
+  float: left;
+  background: url(../images/project/phone_wrap.png) center center no-repeat;
+}
+.proinfo_box .slidebox .slide_item:last-child {
+  margin-right: 0;
+}
+.proinfo_box .slidebox .slide_item > img {
+  width: 178px;
+  height: 317px;
+}
+.proinfo_box .event {
+  background-color: #fbfcfd;
+  padding-bottom: 100px;
+}
+.proinfo_box .timeline {
+  width: 1000px;
+  height: 300px;
+  position: relative;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+.proinfo_box .timeline .line {
+  width: 1px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: #c6c6c6;
+  z-index: 0;
+}
+.proinfo_box .timeline .process {
+  width: 800px;
+  height: 37px;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto 55px;
+  background-color: #fbfcfd;
+}
+.proinfo_box .timeline .process .time {
+  width: 326px;
+  height: 37px;
+  line-height: 37px;
+  color: #23bc7b;
+  font-size: 16px;
+  text-align: right;
+  float: left;
+}
+.proinfo_box .timeline .process .circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #c6c6c6;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.proinfo_box .timeline .process .circle:after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: #23bc7b;
+}
+.proinfo_box .timeline .process .info {
+  width: 350px;
+  height: 37px;
+  line-height: 37px;
+  position: absolute;
+  right: 0;
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

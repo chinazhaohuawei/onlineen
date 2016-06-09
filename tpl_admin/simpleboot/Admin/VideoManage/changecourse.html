@@ -1,0 +1,81 @@
+<admintpl file="header" />
+<body class="J_scroll_fixed">
+<div class="wrap jj">
+    <ul class="nav nav-tabs">
+        <li><a href="{:U('videomanage')}">课程管理</a></li>
+        <li class="active"><a href="">修改课程</a></li>
+    </ul>
+    <div class="common-form">
+        <form method="post" class="form-horizontal J_ajaxForm" action="{:U('changecourse_post')}">
+            <fieldset>
+                <div class="control-group">
+                    <label class="control-label">课程id:</label>
+                    <div class="controls">
+                        <input type="text" class="control-myinput" name="course_id" value="{$course['courseid']}" readonly>
+                        <label class="control-label-right">* 不可修改</label>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">课程名称:</label>
+                    <div class="controls">
+                        <input type="text" class="control-myinput" name="course_title" value="{$course['course_title']}">
+                        <label class="control-label-right">* 建议15字以内</label>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">所属分类:</label>
+                    <div class="controls">
+                        <select class="control-myinput" name="resource_type">
+                            <foreach name="course_type" item="vo" >
+                                <if condition="$vo['type_id'] eq $course['course_type']">
+                                    <option value="{$vo.type_id}" selected>{$vo.type_name}</option>
+                                    <else /><option value="{$vo.type_id}">{$vo.type_name}</option>
+                                </if>
+                            </foreach>
+                        </select>
+                        <label class="control-label-right">* 请正确选择分类</label>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">下载地址:</label>
+                    <div class="controls">
+                        <input type="text" class="control-myinput" name="resource_url" value="{$course['course_down']}">
+                        <label class="control-label-right">* 格式：https://yunpan.cn/cqwuAfrXcwJp2  访问密码 be32</label>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">课程封面:</label>
+                    <div class="controls">
+                        <if condition="$resource['resource_pic']">
+                            <php>
+                                $resource_pic_string=$resource['course_pic'];
+                            </php>
+                            <div class="control-myinput-file" name="control-myinput-file"  id="modal-863110" href="#modal-container-863110" role="button" data-toggle="modal" style='background: url("__ROOT__/data/upload/resource/{$resource_pic_string}");background-size: 80px 80px;'></div>
+                            <input type="hidden" name="resource_pic" id="resource_pic" value="{$resource_pic_string}">
+                            <else/>
+                            <div class="control-myinput-file" name="control-myinput-file"  id="modal-863110" href="#modal-container-863110" role="button" data-toggle="modal"></div>
+                            <input type="hidden" name="resource_pic" id="resource_pic" value="">
+                        </if>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">课程简介:</label>
+                    <div class="controls">
+                        <textarea type="text" class="control-mytextarea" name="resource_info">{$course['course_info']}</textarea>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-actions">
+                <!--<input type="hidden" name="id" value="{$id}" />-->
+                <!--<button type="submit">更新</button>-->
+                <button type="submit" class="btn btn-primary btn_submit J_ajax_submit_btn">更新</button>
+                <a class="btn" href="__URL__/videomanage">返回</a>
+                <!--<a class="btn" href="__URL__/schoollist">清除</a>-->
+            </div>
+        </form>
+    </div>
+</div>
+<script src="__ROOT__/statics/js/common.js"></script>
+<admintpl file="Adddata/uppic" />
+</body>
+</html>

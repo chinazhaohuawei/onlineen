@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <tc_include file="Public:head" />
+    <title>{$video_data[0][video_title]}在线观看_免费下载_英语在线_www.onlineen.cn</title>
+</head>
+<body>
+<tc_include file="Public:nav" />
+<div class="c_details_favorite_box">
+    <div class="links">
+        <a><div class="add_favorite"><label></label><span>添加收藏</span></div></a>
+        <div class="add_favorite_yet"><label></label><span>已收藏</span></div>
+
+    </div>
+</div>
+<div class="c_details_bar_box">
+    <div class="c_details">
+        &nbsp;
+        <h1>{$course_data[0][course_title]}</h1>
+        <p>{$course_data[0][course_info]}</p>
+    </div>
+</div>
+<div class="c_details_main_box">
+    <div class="c_details_main">
+        <div class="c_details_main_first">
+            <div class="top"></div>
+            <h3>{$video_data[0][video_title]}</h3>
+            <div class="bottom">VIDEO ON DEMAND</div>
+        </div>
+        <div class="coure_video">
+            <!--<video controls="controls" preload="auto" autobuffer>-->
+                <!--<source src="__ROOT__/data/video/{$video_data[0][video_url]}.mp4" type="video/mp4">-->
+                <!--您的浏览器不支持该视频插件-->
+            <!--</video>-->
+            <embed src="{$video_data[0][video_url]}" allowScriptAccess="sameDomain" allownetworking="internal"  allowFullScreen="true" quality="high"allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+            <div class="videoright">广告区域</div>
+        </div>
+        <div class="video_down">【高清版全套视频+配套讲义】下载：&nbsp;
+            <a href="{:U('Down/index/videodown',array('id'=>$course_data[0][courseid]))}" style="color: #fff" target="_blank">
+                <label class="glyphicon glyphicon-download-alt" style="margin-right: 30px"></label>
+            </a>
+        </div>
+        <div class="video_guide">
+            <if condition="$last_video_data">
+            <div class="video_last_next">
+                <a href="{:U('Portal/Course/video',array('courseid'=>$last_video_data['course_id'],'videoid'=>$last_video_data['video_id']))}" target="_blank">
+                    <img style='background: url("__ROOT__/data/video/{$last_video_data.video_pic}"); background-size: 124px 85px;' src="__TMPL__/Public/images/playwidth.png" title="{$last_video_data.video_info}">
+                </a>
+                <div class="right">
+                    <h3>
+                        <b>上一集：</b>
+                        <php>
+                            echo msubstr($last_video_data['video_title'],0,13,'utf-8');
+                        </php>
+                        <!--{$vo.video_title|msubstr=###,0,36,'utf-8',false}-->
+                    </h3>
+                    <p>{$last_video_data.video_info}</p>
+                </div>
+            </div>
+            </if>
+            <if condition="$next_video_data">
+                <div class="video_last_next">
+                    <a href="{:U('Portal/Course/video',array('courseid'=>$next_video_data['course_id'],'videoid'=>$next_video_data['video_id']))}" target="_blank">
+                        <img style='background: url("__ROOT__/data/video/{$next_video_data.video_pic}"); background-size: 124px 85px;' src="__TMPL__/Public/images/playwidth.png" title="{$next_video_data.video_info}">
+                    </a>
+                    <div class="right">
+                        <h3>
+                            <b>下一集：</b>
+                            <php>
+                                echo msubstr($next_video_data['video_title'],0,13,'utf-8');
+                            </php>
+                            <!--{$vo.video_title|msubstr=###,0,36,'utf-8',false}-->
+                        </h3>
+                        <p>{$next_video_data.video_info}</p>
+                    </div>
+                </div>
+            </if>
+        </div>
+        <div style="clear: both"></div>
+        <div class="correlation">
+            <p>&nbsp;&nbsp;相关练习题>></p>
+        </div>
+        <div class="video_exercises">
+            <ul>
+                <foreach name="question_arr" item="vo">
+                    <li><a href="">{$vo.tag_name}专项训练 >></a></li>
+                </foreach>
+                <li style="float: right"><a href="">更多在线练习题...</a></li>
+            </ul>
+        </div>
+        <div style="clear: both"></div>
+        <div class="correlation">
+            <p>&nbsp;&nbsp;相关资料>></p>
+        </div>
+        <div class="video_exercises">
+            <ul>
+                <foreach name="resource_arr" item="vo">
+                    <li><a href="{:U('Down/Index/resourcedetail',array('id'=>$vo['resource_id']))}">{$vo.resource_name}</a></li>
+                </foreach>
+                <li style="float: right"><a href="">更多相关资料免费下载...</a></li>
+            </ul>
+        </div>
+        <div style="clear: both"></div>
+        <div class="video_footer_space"></div>
+    </div>
+
+</div>
+<tc_include file="Public:footer" />
+</body>
+</html>

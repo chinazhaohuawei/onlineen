@@ -1,0 +1,14 @@
+[ 2016-06-08T22:46:58+08:00 ] 113.124.118.143 /index.php?g=Admin&m=setting&a=site_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000982s ]
+SQL: SHOW COLUMNS FROM `on_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `on_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `on_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `on_options` WHERE ( option_name='site_options' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `on_options` SET `option_id`='2',`option_name`='site_options',`option_value`='{\"site_name\":\"\\u82f1\\u8bed\\u5728\\u7ebf\",\"site_host\":\"http:\\/\\/www.onlineen.cn\\/\",\"site_tpl\":\"onlineenweb\",\"site_adminstyle\":\"bluesky\",\"site_icp\":\"\",\"site_admin_email\":\"937768649@qq.com\",\"site_tongji\":\"\",\"site_copyright\":\"\",\"site_seo_title\":\"\\u82f1\\u8bed\\u5728\\u7ebf\",\"site_seo_keywords\":\"\",\"site_seo_description\":\"\\u82f1\\u8bed\\u5728\\u7ebf\",\"urlmode\":\"0\",\"html_suffix\":\"\",\"comment_time_interval\":60}' WHERE ( option_name='site_options' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `on_options` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `on_options` WHERE ( option_name='cmf_settings' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `on_options` (`option_name`,`option_value`) VALUES ('cmf_settings','{\"banned_usernames\":\"\"}') [ RunTime:0.0002s ]
+
